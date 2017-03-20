@@ -4,21 +4,17 @@
 // że dzieli się również przez 400.
 
 function isLeapYear(year) {
-    if (year % 4 === 0) {
-        if (year % 100 === 0) {
-            if (year % 400 === 0) {
-                return true;
-            }
-
-            return false;
-        }
-
+    if (year % 400 === 0) {
         return true;
     }
 
-    return false;
-}
+    if (year % 4 !== 0) {
+        return false;
+    }
 
+    return year % 100 !== 0;
+
+}
 console.log(isLeapYear(2000)); // true
 console.log(isLeapYear(2100)); // false
 console.log(isLeapYear(1996)); // true
