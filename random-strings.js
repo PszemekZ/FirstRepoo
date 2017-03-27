@@ -1,7 +1,5 @@
 // Napisz funkcję randomString(), która zwróci losowy łańcuch znaków o podanej długości.
 
-var textLength;
-
 function randomString(textLength) {
     var text = ""
     var array = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
