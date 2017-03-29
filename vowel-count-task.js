@@ -2,8 +2,8 @@
 // znaków.
 
 function vowelCount(string) {
-    const numberOfVowels = string.match(/[aeiou]/gi);
-    return numberOfVowels === null ? 0 : numberOfVowels.length;
+    const array = string.match(/[aeiouy]/gi);
+    return array === null ? 0 : array.length;
 }
 
 console.log(vowelCount("dupa")); // 2
