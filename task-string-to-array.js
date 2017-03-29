@@ -1,7 +1,7 @@
 // Napisz funkcję stringToArray(), która skonwertuje łańcuch znaków na listę słów.
 
 function stringToArray(string) {
-    return string.split('').join('');
+    return string.split(' ');
 
 }
 
