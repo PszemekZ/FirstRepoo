@@ -7,4 +7,4 @@ function alphabetOrder(string) {
 }
 
 console.log(alphabetOrder("dupa")); // adpu
-console.log(alphabetOrder("placki ziemniaczane")); //  aaacceeiiiklmnnpzz
+console.log(alphabetOrder("placki ziemniaczane")); // "aaacceeiiiklmnnpzz"
