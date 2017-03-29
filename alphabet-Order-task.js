@@ -2,10 +2,10 @@
 // uporządkowanymi według alfabetu („wyraz” - „arwyz”). Nie przejmuj się na razie polskimi
 // znakami :)
 
-function alphabetOrder(sortingAscending) {
-    return ortingAscending.split("").sort().join("");
+function alphabetOrder(string) {
+    return string.split("").sort().join("");
 
 }
 
 console.log(alphabetOrder("dupa")); // adpu
-console.log(alphabetOrder("wyraz")); // arwyz
+console.log(alphabetOrder("placki ziemniaczane")); // aaa cc ee iii k l m nn p zz
