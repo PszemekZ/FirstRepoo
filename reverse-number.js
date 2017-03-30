@@ -1,7 +1,7 @@
 // Napisz funkcję reverseNumber(), która odwróci podaną liczbę (1234 => 4321)
 
 function reverseNumber(number) {
-    return parseInt(number.toString().split("").reverse().join(''));
+    return parseInt(number.toString().split("").reverse().join(''), 10);
 }
 
 console.log(reverseNumber(1234)); // 4321
