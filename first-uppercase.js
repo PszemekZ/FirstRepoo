@@ -2,13 +2,9 @@
 // słowa na wielką.
 
 function firstUppercase(string) {
-    const words = string.split(" ");
-
-    for (let i = 0; i < words.length; i++) {
-        words[i] = words[i].charAt(0).toUpperCase() + words[i].substring(1);
-    }
-
-    return words.join(' ');
+    return string.split(" ").map(function(words) {
+        return words.charAt(0).toUpperCase() + words.slice(1);
+    }).join(" ");
 }
 
 console.log(firstUppercase("zamiEni pierwszą literę każego słowa na wielką"));
