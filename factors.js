@@ -2,16 +2,17 @@
 
 
 function factors(number) {
-    let string = [];
-    for (let i = 1; i <= number; i++) {
-        if (number % i === 0) {
-            string.push(i);
+    const factorsArray = [];
+
+    for (let factor = 1; factor <= number; factor++) {
+        if (number % factor === 0) {
+            factorsArray.push(factor);
         }
     }
 
-    return string;
+    return factorsArray;
 }
 
-console.log(factors(50));
+console.log(factors(50)); // 1, 2, 5, 10, 25, 50
 console.log(factors(651));
 console.log(factors(532));
