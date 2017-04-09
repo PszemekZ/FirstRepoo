@@ -4,12 +4,14 @@
 function factors(number) {
     const factorsArray = [];
 
-    for (let factor = 1; factor <= number; factor++) {
+    for (let factor = 1; factor <= number / 2; factor++) {
         if (number % factor === 0) {
             factorsArray.push(factor);
         }
     }
 
+    factorsArray.push(number);
+    
     return factorsArray;
 }
 
