@@ -6,5 +6,5 @@ function alphabetOrder(string) {
     return string.split("").sort().join("");
 }
 
-console.log(alphabetOrder("dupa")); // adpu
-console.log(alphabetOrder("placki ziemniaczane")); // "aaacceeiiiklmnnpzz"
+console.log(alphabetOrder("dupa")); // "adpu"
+console.log(alphabetOrder("placki ziemniaczane")); // " aaacceeiiiklmnnpzz"
