@@ -2,14 +2,13 @@
 // pole trójkąta na podstawie długości podstawy i wysokości lub na podstawie długości wszystkich jego boków.
 
 
-function triangle(a, h, c) {
-
+function triangle(a, b, c) {
     if (c === undefined) {
-        return (a * h) / 2;
-    } else {
-        let perimeter = (a + h + c) / 2;
-        return Math.sqrt(perimeter * ((perimeter - a) * (perimeter - h) * (perimeter - c)));
+        return (a * b) / 2;
     }
+
+    const perimeter = (a + b + c) / 2;
+    return Math.sqrt(perimeter * (perimeter - a) * (perimeter - b) * (perimeter - c));
 }
 
 console.log(triangle(3, 4, 5));
