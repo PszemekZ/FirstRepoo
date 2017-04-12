@@ -5,17 +5,17 @@ function fibonacci(n) {
         return n;
     }
 
-    let a = 0,
-        b = 1,
-        c = 1;
+    let currentNumber = 0,
+        previousNumber = 1,
+        nextNumber = 1;
 
     for (let i = 2; i <= n; i++) {
-        c = a + b;
-        a = b;
-        b = c;
+        nextNumber = currentNumber + previousNumber;
+        currentNumber = previousNumber;
+        previousNumber = nextNumber;
     }
 
-    return c;
+    return nextNumber;
 }
 
 console.log(fibonacci(0)); // 0
