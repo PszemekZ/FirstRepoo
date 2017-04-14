@@ -6,8 +6,7 @@ function fibonacci(n) {
     }
 
     let currentNumber = 0,
-        previousNumber = 1,
-        nextNumber = 1;
+        previousNumber = 1;
 
     for (let i = 2; i <= n; i++) {
         nextNumber = currentNumber + previousNumber;
