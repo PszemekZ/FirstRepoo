@@ -1,8 +1,8 @@
 // Napisz funkcję geoMean(), która zwróci średnią geometryczną podanej tablicy.
 
 function geoMean(array) {
-  return Math.pow(array.reduce(function(acc, next) {
-    return acc * next;
+  return Math.pow(array.reduce(function(accumulator, next) {
+    return accumulator * next;
   }), 1 / array.length);
 }
 
