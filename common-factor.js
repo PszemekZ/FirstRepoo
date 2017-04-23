@@ -2,16 +2,15 @@
 // dwóch liczb na podstawie niezoptymalizowanego Algorytmu Euklidesa.
 
 function commonFactor(a, b) {
-  while (a != b) {
-    while (a < b) {
-      b = b - a;
+    while (a != b) {
+        if (a < b) {
+            b -= a;
+        } else {
+            a -= b;
+        }
     }
-    while (a > b) {
-      a = a - b;
-    }
-  }
-  return a;
 
+    return a;
 }
 
 console.log(commonFactor(6, 24)); // 6
